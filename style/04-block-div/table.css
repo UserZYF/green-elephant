@@ -1,0 +1,63 @@
+/* -------------------------------表格start------------------------------------- */
+/* 表格100%宽度 */
+/* .protyle-wysiwyg table,
+.b3-typography table {
+    display: table;
+    width: 100%;
+} */
+
+/* 设置表头区域顶部边框，使表格更明显 */
+/* table thead {
+    border-top: 0.15em solid var(--b3-theme-primary) !important;
+} */
+
+/*设置表格表头样式，颜色，背景，加粗，居中对齐*/
+table th {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: var(--b3-theme-primary);
+}
+
+/* 设置表格内部边框 */
+th, td {
+    min-width: 1em;
+    border: 0.1em solid #a8a6a866 !important;
+    border-collapse: collapse;
+    color: inherit;
+}
+
+/* 奇偶行不同色 */
+tbody tr:nth-child(2n+1) {
+    background-color: #eaeaea;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+/* 首列颜色 */
+table tr td:first-child {
+    /* color: white;
+    background-color: #737373; */
+    background-color: #d7f7c4;
+    font-weight: bold;
+}
+
+/* 设置表格行悬浮高亮 */
+table th:hover,
+table tr td:hover {
+    background: #d7f7c4 !important;
+    color: var(--b3-theme-primary) !important;
+}
+
+
+/* 设置表格自动宽度 */
+.protyle-wysiwyg [data-node-id][custom-table~=no] table th,
+.protyle-wysiwyg [data-node-id][custom-table~=no] table tr,
+.protyle-wysiwyg [data-node-id][custom-table~=no] table tr td:first-child {
+    background-color: transparent;
+    color: #202124;
+    font-weight: normal;
+    text-align: left;
+}

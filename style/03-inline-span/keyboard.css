@@ -1,0 +1,11 @@
+/* 键盘kbd样式 */
+.b3-typography kbd, .protyle-wysiwyg kbd {
+    border: 0.1em solid var(--b3-theme-primary-lightest);
+    border-bottom: 0.1em solid var(--b3-theme-primary) !important;
+    border-radius: 4px;
+    color: var(--b3-theme-primary);
+    background-color: var(--b3-theme-primary-lightest) !important;
+    font-family: var(--b3-font-family-code);
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+}

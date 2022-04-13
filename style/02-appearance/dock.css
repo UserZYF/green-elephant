@@ -1,0 +1,51 @@
+/* 隐藏左上角设置按钮，鼠标悬浮时显示 */
+/* #toolbar .toolbar__item svg {
+    opacity: 0;
+} */
+
+/* #toolbar:hover svg {
+    opacity: 1;
+} */
+
+
+/* 给左侧dock栏设置右边框 */
+/* div#dockLeft {
+    border-right: 1px solid var(--b3-border-color);
+} */
+
+/* 给右侧dock栏设置左边框 */
+/* div#dockRight {
+    border-left: 1px solid var(--b3-border-color);
+} */
+
+/* 设置顶栏背景颜色 */
+div#toolbar {
+    background-color: #0e7154;
+}
+
+/* 设置顶栏中间文字的颜色 */
+.toolbar #drag {
+    color: rgb(216, 216, 216);
+}
+
+/* 设置顶栏图标的颜色 */
+.toolbar .fn__flex>div,
+div#toolbar>div {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 设置侧边栏的颜色为渐变色 */
+div#dockLeft,
+div#dockRight {
+    background: rgb(131, 239, 182);
+    background: linear-gradient(135deg, rgba(131, 239, 182, .3) 0%, rgba(129, 238, 137, .3) 18%, rgba(184, 232, 117, .3) 36%, rgba(186, 230, 109, .3) 48%, rgba(191, 225, 86, .3) 53%, rgba(184, 228, 91, .3) 61%, rgba(172, 232, 100, .3) 68%, rgba(156, 238, 86, .3) 71%, rgba(141, 242, 87, .3) 91%, rgba(89, 254, 175, .3) 100%);
+}
+
+/* 修改最小化窗口鼠标悬浮时的颜色 */
+div#minWindow:hover {
+    background-color: rgba(255, 255, 169, 0.8);
+}
+
+div#restoreWindow:hover {
+    background-color: rgba(178, 255, 178, 0.8);
+}

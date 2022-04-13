@@ -1,0 +1,180 @@
+:root {
+    /* 主色 */
+    --b3-theme-primary: #2bbe60;
+    --b3-theme-primary-light: rgba(43, 190, 96, 0.54);
+    --b3-theme-primary-lighter: rgba(43, 190, 96, 0.38);
+    --b3-theme-primary-lightest: rgba(43, 190, 96, 0.12);
+    --b3-theme-secondary: #ffd939;
+
+
+    --b3-theme-background: #edffe3;
+    --b3-theme-background-light: #fafafa;
+    --b3-theme-surface: #f3faf4;
+    --b3-theme-surface-light: rgba(14, 113, 84, .86);
+    --b3-theme-error: #a6ff32;
+    --b3-theme-dock: #0e7154;
+
+    /* 文字颜色 */
+    --b3-theme-on-primary: #fff;
+    --b3-theme-on-secondary: #fff;
+    --b3-theme-on-background: #424242;
+    --b3-theme-on-surface: gray;
+    --b3-theme-on-error: #fff;
+
+    /* 字体 */
+    --b3-font-family: 'PingFang SC', "Microsoft YaHei", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family-code: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
+    --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+    --b3-font-family-graph: mononoki;
+    --b3-font-family-math: KaTeX_Math;
+
+    /* 线条 */
+    --b3-border-color: hsla(0, 0%, 89%, 0.4);
+
+    /* 滚动条 */
+    --b3-scroll-color: rgba(43, 190, 96, 0.2);
+
+    /* 列表 */
+    --b3-list-hover: #e9eaea;
+
+    /* 菜单 */
+    --b3-menu-background: #f8f9fa;
+
+    /* 提示 */
+    --b3-tooltips-color: gray;
+
+    /* 遮罩 */
+    --b3-mask-background: rgba(0, 0, 0, 0.78);
+
+    /* 卡片背景 */
+    /* --b3-card-error-color: rgb(97, 26, 21);
+    --b3-card-warning-color: rgb(102, 60, 0);
+    --b3-card-info-color: rgb(13, 60, 97);
+    --b3-card-success-color: rgb(30, 70, 32); */
+
+    --b3-card-error-color: white;
+    --b3-card-warning-color: white;
+    --b3-card-info-color: white;
+    --b3-card-success-color: white;
+
+    --b3-card-error-background: #ffad9f;
+    --b3-card-warning-background: #fece7c;
+    --b3-card-info-background: #85c7e5;
+    --b3-card-success-background: #85d7c7;
+
+    /* 自定义文字 */
+    --b3-font-color1: #d83931;
+    --b3-font-color2: #de7802;
+    --b3-font-color3: #856404;
+    --b3-font-color4: #2ea121;
+    --b3-font-color5: #35737d;
+    --b3-font-color6: #245bdb;
+    --b3-font-color7: #6425d0;
+    --b3-font-color8: #b3b3b3;
+    /* --b3-font-color9: white;
+    --b3-font-color10: white;
+    --b3-font-color11: white;
+    --b3-font-color12: white; */
+    --b3-font-color9: #ffd4dc;
+    --b3-font-color10: #ffedd3;
+    --b3-font-color11: #d1e1ff;
+    --b3-font-color12: #d9ffe6;
+    --b3-font-color13: gray;
+
+
+    --b3-font-background1: #fbbfbc;
+    --b3-font-background2: #fed4a4;
+    --b3-font-background3: #ffe9a1;
+    --b3-font-background4: #b7edb1;
+    --b3-font-background5: #d1ecf1;
+    --b3-font-background6: #bacefd;
+    --b3-font-background7: #cdb2fa;
+    --b3-font-background8: #e1e1e1;
+    /* --b3-font-background9: #e64f4e;
+    --b3-font-background10: #ebc23d;
+    --b3-font-background11: #22aad4;
+    --b3-font-background12: #47cb73; */
+    --b3-font-background9: #f9627f;
+    --b3-font-background10: #feb74d;
+    --b3-font-background11: #4780ff;
+    --b3-font-background12: #45da77;
+    --b3-font-background13: transparent;
+
+    /* 动画效果 */
+    --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
+    --b3-width-transition: width .15s cubic-bezier(0, 0, .2, 1) 0ms;
+
+    /* 阴影 */
+    --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+    /* diff */
+    --b3-diff-add: #dfd;
+    --b3-diff-add-surface: #97f295;
+    --b3-diff-del: #fee8e9;
+    --b3-diff-del-surface: #ffb6ba;
+
+    /* 图表颜色 */
+    --b3-graph-p-point: #076f7e;
+    --b3-graph-heading-point: #660e7a;
+    --b3-graph-math-point: #80FFA5;
+    --b3-graph-code-point: #00DDFF;
+    --b3-graph-table-point: #37A2FF;
+    --b3-graph-list-point: #FF0087;
+    --b3-graph-todo-point: #FFBF00;
+    --b3-graph-olist-point: #b3005f;
+    --b3-graph-listitem-point: #f65b00;
+    --b3-graph-bq-point: #8d48e3;
+    --b3-graph-super-point: #dd79ff;
+    --b3-graph-doc-point: #202124;
+    --b3-graph-tag-point: #dbf32f;
+    --b3-graph-asset-point: #05c091;
+    --b3-graph-line: #5f6368;
+    --b3-graph-ref-line: #d23f31;
+    --b3-graph-tag-line: #5f6b06;
+    --b3-graph-tag-tag-line: #dbf32f;
+    --b3-graph-asset-line: #037457;
+    --b3-graph-hl-point: #f3a92f;
+    --b3-graph-hl-line: #4285f4;
+
+    /* 编辑器搜索颜色 */
+    --b3-protyle-search-background: #ffe955;
+    --b3-protyle-search-border-color: #f2e680;
+    --b3-protyle-search-current-background: #a5d3fe;
+
+    /* 代码片段背景 */
+    --b3-protyle-code-background: rgba(27, 31, 35, .05);
+
+    /* 所见即所得行内元素颜色 */
+    --b3-protyle-inline-strong-color: #202124;
+    --b3-protyle-inline-em-color: #202124;
+    --b3-protyle-inline-s-color: #202124;
+    --b3-protyle-inline-link-color: #4285f4;
+    --b3-protyle-inline-mark-background: #ffd939;
+    --b3-protyle-inline-mark-color: #202124;
+    --b3-protyle-inline-tag-color: #5f6368;
+    --b3-protyle-inline-blockref-color: #660e7a;
+
+    /* PDF */
+    --b3-pdf-selection: yellow;
+    --b3-pdf-sidebar-width: 200px;
+    --b3-pdf-offset: 0;
+    --b3-pdf-background1: #ffb3ac;
+    --b3-pdf-background2: #ffec84;
+    --b3-pdf-background3: #ffff57;
+    --b3-pdf-background4: #80ff80;
+    --b3-pdf-background5: #98eaff;
+    --b3-pdf-background6: #91d5ff;
+    --b3-pdf-background7: #d4b8f8;
+
+    /* 边框颜色 */
+    --b3-border-color-white: rgba(255, 255, 255, 0.4);
+    --b3-border-color1: rgb(228, 228, 228);
+    --b3-border-tab-color: #cecdce;
+}
+
+/* PDF */
+/* .textLayer,
+.pdf__resize {
+    mix-blend-mode: darken;
+} */

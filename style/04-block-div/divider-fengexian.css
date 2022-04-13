@@ -1,0 +1,9 @@
+/* ——————————————————————————————————————————分割线—————————————————————————————————————————————— */
+.protyle-wysiwyg [data-node-id].hr>div {
+    /* border-bottom: 1px solid var(--b3-border-color1); */
+    border: 0;
+    padding: 3px;
+    background: repeating-linear-gradient(135deg, #2bbe60 0px, #ffd939 1px, transparent 1px, transparent 6px);
+}
+
+/* ——————————————————————————————————————————分割线 END—————————————————————————————————————————————— */

@@ -1,0 +1,7 @@
+.b3-typography code:not(.hljs), .protyle-wysiwyg code:not(.hljs) {
+    color: var(--b3-theme-primary);
+    background-color: var(--b3-theme-primary-lightest);
+    border-radius: 4px;
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+}

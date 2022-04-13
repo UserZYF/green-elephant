@@ -1,0 +1,16 @@
+/* -------------------------------------------------高亮----------------------------------------------- */
+mark {
+    border-radius: 4px;
+    margin: 0px 0px;
+}
+
+/* 搜索高亮 */
+.protyle-wysiwyg [data-node-id] span[data-type="search-mark"] {
+    outline: 1px solid black;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+/* -------------------------------------------------高亮 END----------------------------------------------- */

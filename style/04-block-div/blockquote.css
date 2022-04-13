@@ -1,0 +1,20 @@
+/* ----------------------------------------------引用---------------------------------------------- */
+/* ——————————————————————————设置引用格式———————————————————————————— */
+.protyle-wysiwyg [data-node-id].bq,
+.b3-typography blockquote {
+    position: relative;
+    color: var(--b3-theme-dock);
+    background-color: rgba(215, 247, 196, 0.5);
+    font-weight: bold;
+    border-left-color: transparent;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.protyle-wysiwyg [data-node-id].bq::before,
+.b3-typography blockquote::before {
+    content: url("../../src/quote.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
