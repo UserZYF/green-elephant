@@ -1,6 +1,6 @@
 /* ---------------------------------加粗------------------------------ */
 .b3-typography strong,
 .protyle-wysiwyg strong {
-    color: var(--b3-theme-primary);
+    color: var(--b3-protyle-inline-strong-color);
     font-weight: bold;
 }

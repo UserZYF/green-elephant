@@ -1,24 +1,66 @@
-/* 标签页相关设置 */
-
 .layout-tab-bar.fn__flex,
 ul.fn__flex.layout-tab-bar {
-    background-color: var(--b3-theme-dock);
+    background-color: #c8edcc;
+    /* z-index: -1; */
 }
 
-
+/* 设置初始元素 */
 .layout-tab-bar .item {
-    background-color: #d7f7c4;
-    min-width: 12em;
-    border-top: 4px solid var(--b3-theme-dock);
+    position: relative;
+    /* display: block; */
+    /* padding: .3em 0.3em 0; */
+    padding: 0.1em;
+    background-color: transparent;
+    flex: none;
+    z-index: 1;
+    margin-left: -5px;
+    margin-right: -5px;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    padding: 2px 1em 0px 1em;
+    box-shadow: none;
 }
 
-.layout-tab-bar .item:hover:not(.item--focus) {
-    background-color: #d7f7c4!important;
-    border-top: 4px solid var(--b3-theme-dock);
+.layout-tab-bar .item:first-child {
+    margin-left: 0;
+}
+
+.layout-tab-bar .item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* background: #ccc; */
+    /* background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0)); */
+    background-color: #c9eacd !important;
+    border: 1px solid #80808080;
+    border-bottom: none;
+    border-radius: .5em .5em 0 0;
+    /* box-shadow: 0 .15em white inset; */
+    transform: scaleY(1.1) perspective(1em) rotateX(5deg);
+    transform-origin: bottom;
 }
 
 
-/* 标签页中文字的相关设置 */
+/* 设置当前标签页样式 */
+.layout-tab-bar .item--focus {
+    box-shadow: none !important;
+    z-index: 2;
+}
+
+.layout-tab-bar .item--focus::before {
+    background-color: #deffe8 !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.layout-tab-bar .item:hover {
+    background-color: transparent !important;
+}
+
+
 .layout-tab-bar .item .item__text {
     width: 6em;
     padding-left: 15px;
@@ -27,56 +69,6 @@ ul.fn__flex.layout-tab-bar {
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
     display: inline;
-    color: gray;
+    /* color: gray; */
     /* border-right: 1px solid #2bbe60; */
-}
-/* .layout-tab-bar .item--focus .item__text {
-    padding-left: 15px;
-    padding-right: 15px;
-} */
-
-
-
-/* 设置当前标签页样式 */
-.layout-tab-bar .item--focus {
-    color: var(--b3-theme-dock);
-    background: var(--b3-theme-background);
-    /* font-weight: bold !important; */
-    box-shadow: none !important;
-    border-top: 4px solid var(--b3-theme-background);
-}
-
-.layout-tab-bar .item--focus:first-child {
-    border-radius: 0px 4px 0px 0px;
-}
-
-
-.layout-tab-bar .item--focus:last-child {
-    border-radius: 4px 0px 0px 0px;
-}
-
-
-/* 给标签页中文字添加左侧边框（模仿chrome标签页的步骤） */
-.layout-tab-bar .item:not(.item--focus) .item__text {
-    border-left: 0.05em solid var(--b3-theme-primary-lighter);
-}
-
-/* 将第一个标签页左侧边框设置为透明（模仿chrome标签页的步骤） */
-.layout-tab-bar .item:not(.item--focus):first-child .item__text {
-    border-left: 0.05em solid transparent;
-}
-
-/* 给最后一个标签页设置右边框（模仿chrome标签页的步骤） */
-/* .layout-tab-bar .item:not(.item--focus):last-child .item__text::after {
-    border-right: 0.05em solid transparent;
-} */
-
-/* 将当前标签页的左侧边框设置为透明（不设置就没有边框宽度，点击会有一点点左右位移） */
-.layout-tab-bar .item--focus .item__text {
-    border-left: 0.05em solid transparent !important;
-}
-
-/* 将当前标签页的右侧标签页的左边框设置为透明 */
-.layout-tab-bar .item--focus+.item .item__text {
-    border-left: 0.05em solid transparent !important;
 }

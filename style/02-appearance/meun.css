@@ -28,6 +28,7 @@ button.b3-list-item.b3-list-item--two.fn__block .b3-menu__accelerator {
     color: #80808080;
     font-family: var(--b3-font-family-code);
 }
+
 .b3-list-item--focus .b3-list-item__meta {
     color: rgba(255, 255, 255, 0.6);
 }
@@ -57,10 +58,10 @@ button.b3-list-item.b3-list-item--two.fn__block.b3-list-item--focus {
     border-radius: 4px !important;
 }
 
-button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover {
+/* button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover {
     border-radius: 4px;
     background: rgba(55, 53, 47, 0.08) !important;
-}
+} */
 
 .protyle-util .b3-list--background .b3-list-item--focus,
 div.b3-meun .b3-list .b3-list--background .b3-list-item--focus {
@@ -98,4 +99,28 @@ div#commonMenu {
 
 .b3-menu, .b3-menu .b3-menu__submenu {
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.b3-menu.b3-list.b3-list--background span.b3-list-item__text {
+    color: gray;
+}
+
+button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover {
+    background-color: #efefef !important;
+    border-radius: 4px;
+}
+
+button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover span.b3-list-item__text,
+button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover .b3-list-item__graphic {
+    color: var(--b3-theme-on-background) !important;
+    border-radius: 4px;
+}
+
+button.b3-list-item.b3-list-item--two.fn__block.b3-list-item--focus span.b3-list-item__text {
+    color: white !important;
+}
+
+.b3-menu.b3-list.b3-list--background button.b3-list-item.b3-list-item--two.fn__block:hover {
+    color: var(--b3-theme-on-background) !important;
 }

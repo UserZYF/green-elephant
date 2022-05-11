@@ -1,11 +1,12 @@
 /* 隐藏左上角设置按钮，鼠标悬浮时显示 */
-/* #toolbar .toolbar__item svg {
+#toolbar .toolbar__item svg {
     opacity: 0;
-} */
+    /* background-color: red; */
+}
 
-/* #toolbar:hover svg {
+#toolbar:hover svg {
     opacity: 1;
-} */
+}
 
 
 /* 给左侧dock栏设置右边框 */
@@ -20,12 +21,12 @@
 
 /* 设置顶栏背景颜色 */
 div#toolbar {
-    background-color: #0e7154;
+    background-color: #56bd90;
 }
 
 /* 设置顶栏中间文字的颜色 */
 .toolbar #drag {
-    color: rgb(216, 216, 216);
+    color: white;
 }
 
 /* 设置顶栏图标的颜色 */
@@ -37,8 +38,9 @@ div#toolbar>div {
 /* 设置侧边栏的颜色为渐变色 */
 div#dockLeft,
 div#dockRight {
-    background: rgb(131, 239, 182);
-    background: linear-gradient(135deg, rgba(131, 239, 182, .3) 0%, rgba(129, 238, 137, .3) 18%, rgba(184, 232, 117, .3) 36%, rgba(186, 230, 109, .3) 48%, rgba(191, 225, 86, .3) 53%, rgba(184, 228, 91, .3) 61%, rgba(172, 232, 100, .3) 68%, rgba(156, 238, 86, .3) 71%, rgba(141, 242, 87, .3) 91%, rgba(89, 254, 175, .3) 100%);
+    /* background: #252525; */
+    background-color: #20232d;
+    /* background: linear-gradient(135deg, rgba(131, 239, 182, .3) 0%, rgba(129, 238, 137, .3) 18%, rgba(184, 232, 117, .3) 36%, rgba(186, 230, 109, .3) 48%, rgba(191, 225, 86, .3) 53%, rgba(184, 228, 91, .3) 61%, rgba(172, 232, 100, .3) 68%, rgba(156, 238, 86, .3) 71%, rgba(141, 242, 87, .3) 91%, rgba(89, 254, 175, .3) 100%); */
 }
 
 /* 修改最小化窗口鼠标悬浮时的颜色 */

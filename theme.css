@@ -14,7 +14,7 @@
 /* 修改上左右dock栏样式 */
 @import url("style/02-appearance/dock.css");
 /* 修改正文A4纸大小 */
-/* @import url("style/02-appearance/A4.css"); */
+@import url("style/02-appearance/A4.css");
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
 /* 修改标签页样式 */

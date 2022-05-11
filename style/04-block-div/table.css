@@ -15,42 +15,39 @@
 table th {
     font-weight: bold;
     text-align: center;
-    color: white;
-    background-color: var(--b3-theme-primary);
+    color: var(--b3-theme-on-background);
+    /* background-color: #deffe8; */
+    background-color: #d7f7c4;
 }
 
 /* 设置表格内部边框 */
 th, td {
-    min-width: 1em;
-    border: 0.1em solid #a8a6a866 !important;
+    /* min-width: 1em; */
+    border: 0.1em solid rgba(128, 128, 128, 0.3) !important;
     border-collapse: collapse;
-    color: inherit;
+    color: var(--b3-theme-on-background);
 }
 
-/* 奇偶行不同色 */
-tbody tr:nth-child(2n+1) {
-    background-color: #eaeaea;
-}
-
-tbody tr:nth-child(2n) {
-    background-color: #f8f8f8;
-}
 
 /* 首列颜色 */
-table tr td:first-child {
-    /* color: white;
-    background-color: #737373; */
-    background-color: #d7f7c4;
+/* table tr td:first-child {
     font-weight: bold;
-}
+} */
 
 /* 设置表格行悬浮高亮 */
-table th:hover,
-table tr td:hover {
+table tr:hover {
     background: #d7f7c4 !important;
     color: var(--b3-theme-primary) !important;
 }
 
+/* 奇偶行不同色 */
+tbody tr:nth-child(2n+1) {
+    background-color: transparent !important;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: transparent !important;
+}
 
 /* 设置表格自动宽度 */
 .protyle-wysiwyg [data-node-id][custom-table~=no] table th,

@@ -5,8 +5,8 @@
     color: #202124;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)::before {
-    content: "↗ ";
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)::after {
+    content: " →";
     color: var(--b3-theme-primary);
 }
 

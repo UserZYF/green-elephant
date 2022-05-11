@@ -18,10 +18,11 @@
 .b3-button--outline:hover,
 .b3-button--outline:focus {
     transition: all 0.1s ease-in-out;
-    color: white;
-    border: 0.05em solid var(--b3-theme-primary);
-    background-image: linear-gradient(90deg,#5cd0a8,#50d088);
-    box-shadow:  0 7px 12px 0 rgb(3 214 156 / 42%);
+    color: #fafafa;
+    border: 0.05em solid #56bd90;
+    /* background-image: linear-gradient(90deg,#5cd0a8,#50d088); */
+    background-color: #56bd90;
+    /* box-shadow: 0 7px 12px 0 rgb(3 214 156 / 42%); */
     box-sizing: border-box;
 }
 

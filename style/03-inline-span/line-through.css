@@ -1,6 +1,6 @@
 /* 设置删除线中间线条的颜色 */
 .b3-typography s,
 .protyle-wysiwyg s {
-    text-decoration: line-through;
-    text-decoration-color: rgb(255, 121, 121);
+    text-decoration: 0.2em solid line-through var(--b3-theme-primary);
+    /* text-decoration-color: var(--b3-theme-primary); */
 }

@@ -1,13 +1,13 @@
 /* ————————————————————设置界面颜色———————————————————— */
 /* 设置界面侧栏 */
 .b3-dialog--open .b3-dialog__container ul.b3-tab-bar.b3-list.b3-list--background {
-    background-color: #d7f7c4 !important;
+    background-color: #deffe8 !important;
     border-right: 1px solid var(--b3-border-color);
 }
 
 /* 设置界面右栏 */
 .b3-dialog--open .b3-dialog__container .b3-tab-container {
-    background-color: #f3faf4 !important;
+    background-color: #f0fff5 !important;
 }
 
 /* 搜索界面标签页中文字居中 */
@@ -25,6 +25,7 @@
     border-top: 0px solid transparent;
     border-radius: 0px;
 }
+
 .b3-dialog--open .b3-dialog__container .layout-tab-bar {
     background-color: #d7f7c4;
 }

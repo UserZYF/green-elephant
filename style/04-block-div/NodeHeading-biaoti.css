@@ -1,7 +1,6 @@
 /* ——————————————————————————文档标题样式—————————————————————————— */
 .protyle-title__input {
-    background-color: transparent;
-    border-bottom: 1px solid var(--b3-border-color1);
+    font-weight: 550;
 }
 
 /* 设置标题左边icon的样式 */
@@ -28,6 +27,7 @@
     z-index: 0;
     vertical-align: middle;
     margin-top: 36px;
+    border-bottom: 1px dashed var(--b3-border-color1);
 }
 
 .protyle-wysiwyg [data-node-id].h2,
@@ -37,6 +37,8 @@
     position: relative;
     z-index: 0;
     margin-top: 30px;
+    text-decoration: 3px solid var(--b3-theme-primary) underline;
+    text-underline-offset: 5px;
 }
 
 .protyle-wysiwyg [data-node-id].h3,
@@ -91,36 +93,82 @@
     float: left;
     font-weight: 400;
     font-family: var(--b3-font-family-code);
-}
+} */
 
 
 
-.protyle-wysiwyg [data-node-id].h1::before {
+/* .protyle-wysiwyg [data-node-id].h1::before {
     content: "¹";
     color: var(--b3-font-color1);
-}
+} */
 
-.protyle-wysiwyg [data-node-id].h2::before {
+/* .protyle-wysiwyg [data-node-id].h2::before {
     content: "²";
     color: var(--b3-font-color2);
-}
+} */
 
-.protyle-wysiwyg [data-node-id].h3::before {
+/* .protyle-wysiwyg [data-node-id].h3::before {
     content: "³";
     color: var(--b3-font-color3);
+} */
+
+.h3::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: var(--b3-theme-primary);
+    left: -10px;
+    bottom: 12px;
+    z-index: -1;
+    border-radius: 50%;
 }
+
+.h3::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: var(--b3-theme-primary-lighter);
+    left: -16px;
+    bottom: 14px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
 
 .protyle-wysiwyg [data-node-id].h4::before {
-    content: "⁴";
-    color: var(--b3-font-color4);
+    content: "。";
+    font-family: "微软雅黑";
+    position: absolute;
+    left: -0.38em;
+    bottom: 0.12em;
+    /* bottom: 0.25em; */
+    font-size: 2em;
+    color: var(--b3-theme-primary);
+    /* opacity: 0.7; */
 }
 
-.protyle-wysiwyg [data-node-id].h5::before {
+/* .protyle-wysiwyg [data-node-id].h5::before {
     content: "⁵";
     color: var(--b3-font-color5);
+} */
+
+/* 给 5 级标题添加伪元素 */
+.h5::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 50%;
+    background-color: var(--b3-theme-primary);
+    border-radius: 50px;
+    left: -0.3em;
+    top: 0.45em;
+    /* opacity: 0.4; */
 }
 
-.protyle-wysiwyg [data-node-id].h6::before {
+/* .protyle-wysiwyg [data-node-id].h6::before {
     content: "⁶";
     color: var(--b3-font-color6);
 } */

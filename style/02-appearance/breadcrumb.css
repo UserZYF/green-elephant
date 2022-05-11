@@ -1,20 +1,31 @@
 /* -------------------------------------------------面包屑导航样式-------------------------------------------- */
 .protyle-breadcrumb {
-    color: rgb(192, 192, 192);
+    color: gray;
+    background-color: #c8edcc;
+    font-size: 14px !important;
+    height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 50px;
 }
 
-/* .protyle-breadcrumb__item svg {
+.protyle-breadcrumb__item svg {
     height: 14px;
     width: 14px;
 }
 
 .fn__flex-1.protyle {
-    background-color: var(--b3-theme-background2);
+    background-color: #deffe8;
 }
 
 .protyle-content {
-    border-top: var(--b3-border-normal);
-    box-shadow: var(--b3-protyle-content-shadow);
-} */
+    border-top: 1px solid #cfcece;
+    box-shadow: 0px 10px 14px -5px rgba(128, 128, 128, 0.1) inset;
+}
 
 /* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
