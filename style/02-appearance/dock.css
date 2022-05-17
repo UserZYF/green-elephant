@@ -8,6 +8,26 @@
     opacity: 1;
 }
 
+div#toolbar .toolbar__item:not(.toolbar__item:last-child):hover {
+    background-color: transparent;
+}
+
+/* 调整顶栏图标外边距 */
+#toolbar .toolbar__item {
+    margin: 0 4px;
+}
+
+/* 设置顶栏高度 */
+.toolbar {
+    height: 24px;
+    line-height: 24px;
+}
+
+/* 调整顶栏图标大小 */
+div#toolbar svg {
+    height: 12px;
+    width: 12px;
+}
 
 /* 给左侧dock栏设置右边框 */
 /* div#dockLeft {
@@ -45,9 +65,9 @@ div#dockRight {
 
 /* 修改最小化窗口鼠标悬浮时的颜色 */
 div#minWindow:hover {
-    background-color: rgba(255, 255, 169, 0.8);
+    background-color: rgba(255, 255, 169, 0.8) !important;
 }
 
 div#restoreWindow:hover {
-    background-color: rgba(178, 255, 178, 0.8);
+    background-color: rgba(178, 255, 178, 0.8) !important;
 }
