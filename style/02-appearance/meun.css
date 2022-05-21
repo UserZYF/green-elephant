@@ -30,7 +30,7 @@ button.b3-list-item.b3-list-item--two.fn__block .b3-menu__accelerator {
 }
 
 .b3-list-item--focus .b3-list-item__meta {
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
 }
 
 /* 设置分栏滚动条宽度 */
@@ -118,7 +118,7 @@ button.b3-list-item.b3-list-item--two.fn__block:not(.b3-list-item--focus):hover 
 }
 
 button.b3-list-item.b3-list-item--two.fn__block.b3-list-item--focus span.b3-list-item__text {
-    color: white !important;
+    color: var(--b3-theme-primary) !important;
 }
 
 .b3-menu.b3-list.b3-list--background button.b3-list-item.b3-list-item--two.fn__block:hover {

@@ -7,9 +7,9 @@
     --b3-theme-secondary: #ffd939;
 
 
-    --b3-theme-background: #c8edcc;
+    --b3-theme-background: #d4e7d8;
     --b3-theme-background-light: #fafafa;
-    --b3-theme-surface: #f3faf4;
+    --b3-theme-surface: #d4e7d8;
     --b3-theme-surface-light: rgba(14, 113, 84, .86);
     --b3-theme-error: rgb(228, 84, 84);
     --b3-theme-dock: #0e7154;
@@ -17,7 +17,7 @@
     /* 文字颜色 */
     --b3-theme-on-primary: #fff;
     --b3-theme-on-secondary: #fff;
-    --b3-theme-on-background: #424242;
+    --b3-theme-on-background: black;
     --b3-theme-on-surface: gray;
     --b3-theme-on-error: #fff;
 
@@ -32,8 +32,7 @@
     --b3-border-color: rgba(155, 154, 154, 0.1);
 
     /* 滚动条 */
-    /* --b3-scroll-color: rgba(255, 255, 255, 0.3); */
-    --b3-scroll-color: rgba(109, 111, 117, 0.5);
+    --b3-scroll-color: rgb(255, 255, 255, 0.5);
 
 
     /* 列表 */

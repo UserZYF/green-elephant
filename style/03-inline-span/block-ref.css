@@ -1,39 +1,13 @@
 /* ------------------------------------------------块引用/引用块------------------------------------------------- */
+
+
 /* 设置引用块格式 */
-/* .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    color: var(--b3-theme-primary) !important;
-    border-bottom: 0.1em solid gray;
-    font-weight: bold;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-} */
-
-/* .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    display: inline-block;
-    position: relative;
-    color: var(--b3-theme-dock);
-    background-color: rgba(215, 247, 196, 0.5);
-    font-weight: bold;
-    padding-left: 4px;
-    padding-right: 4px;
-    border: 0.1em solid var(--b3-theme-primary-lighter);
-} */
-
-/* .protyle-wysiwyg [data-node-id] span[data-type='block-ref']::before {
-    content: url("../../src/zuoshang.svg");
-    position: absolute;
-    top: -4px;
-    left: -2px;
-} */
-
-/* .protyle-wysiwyg [data-node-id] span[data-type='block-ref']::after {
-    content: url("../../src/youxia.svg");
-    position: absolute;
-    right: -2px;
-    bottom: -8px;
-} */
+.protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
+    color: var(--b3-theme-on-background);
+    border-radius: 4px;
+    /* text-decoration: 0.1em solid underline #80808080;
+    text-underline-offset: 2px; */
+}
 
 /* 为引用块后面增加引用图标 */
 /* .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
@@ -41,39 +15,18 @@
     position: relative;
     font-size: 80%;
     top: -0.05em;
-    margin-right: 2px;
+    margin-right: 0.1em;
 } */
 
-/* 设置引用块格式 */
-.protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    color: var(--b3-theme-primary) !important;
-    font-weight: 550;
-    /* background-color: #0066ff1a; */
-    padding: 1px 3px;
-    border-radius: 4px;
-}
 
-/* 为引用块后面增加引用图标 */
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
-    color: rgba(128, 128, 128, 0.6);
-    content: "「";
-    font-family: var(--b3-font-family-code);
+    content: "[[";
+    color: var(--b3-theme-primary);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
-    color: rgba(128, 128, 128, 0.6);
-    content: "」";
-    font-family: var(--b3-font-family-code);
-}
-
-/* 去掉h1-h6标题上块引用的下划线，感谢二群群友123的建议 */
-.h1 span[data-type='block-ref'],
-.h2 span[data-type='block-ref'],
-.h3 span[data-type='block-ref'],
-.h4 span[data-type='block-ref'],
-.h5 span[data-type='block-ref'],
-.h6 span[data-type='block-ref'] {
-    border-bottom: 1px solid transparent !important;
+    content: "]]";
+    color: var(--b3-theme-primary);
 }
 
 /* ------------------------------------------------块引用 END------------------------------------------------- */

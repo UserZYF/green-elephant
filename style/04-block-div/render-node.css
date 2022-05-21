@@ -1,8 +1,7 @@
 /* ------------------------------------------------块嵌入/嵌入块------------------------------------------------- */
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
     color: var(--b3-theme-dock);
-    background-color: rgba(215, 247, 196, 0.5);
-    font-weight: bold;
+    background-color: #c4dbc8;
     padding: 8px;
     padding-left: 20px;
     border: 0.1em solid var(--b3-theme-primary-lighter);

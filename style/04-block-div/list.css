@@ -44,7 +44,7 @@
     content: "";
     position: absolute;
     /* border-left: 0.1em solid var(--b3-theme-primary-lighter); */
-    border-left: 0.1em solid rgb(207, 207, 207);
+    border-left: 0.1em solid #b9b9b9;
     top: 4px;
     left: -18px;
     z-index: 3;

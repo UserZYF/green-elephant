@@ -1,29 +1,33 @@
 .layout-tab-bar.fn__flex,
 ul.fn__flex.layout-tab-bar {
-    background-color: #c8edcc;
+    background-color: var(--b3-theme-background);
     /* z-index: -1; */
 }
 
 /* 设置初始元素 */
 .layout-tab-bar .item {
     position: relative;
-    /* display: block; */
-    /* padding: .3em 0.3em 0; */
     padding: 0.1em;
     background-color: transparent;
     flex: none;
     z-index: 1;
     margin-left: -5px;
     margin-right: -5px;
-    /* padding-left: 1em;
-    padding-right: 1em; */
-    padding: 2px 1em 0px 1em;
+    padding: 3px 1em 0px 1em;
     box-shadow: none;
 }
 
-.layout-tab-bar .item:first-child {
-    margin-left: 0;
+.layout-tab-bar .item:first-child::before {
+    margin-left: 6px;
 }
+
+/* .layout-tab-bar .item:last-child::before {
+    margin-right: 10px;
+} */
+
+/* .layout-tab-bar .item:first-child {
+    margin-left: 0;
+} */
 
 .layout-tab-bar .item::before {
     content: '';
@@ -33,13 +37,11 @@ ul.fn__flex.layout-tab-bar {
     bottom: 0;
     left: 0;
     z-index: -1;
-    /* background: #ccc; */
-    /* background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0)); */
-    background-color: #c9eacd !important;
-    border: 1px solid #80808080;
+    /* background-color: #c9eacd !important; */
+    background-color: #c4dbc8 !important;
+    border: 1px solid #8080804d;
     border-bottom: none;
-    border-radius: .5em .5em 0 0;
-    /* box-shadow: 0 .15em white inset; */
+    border-radius: 0;
     transform: scaleY(1.1) perspective(1em) rotateX(5deg);
     transform-origin: bottom;
 }
@@ -51,9 +53,13 @@ ul.fn__flex.layout-tab-bar {
     z-index: 2;
 }
 
+.layout-tab-bar .item--focus .item__text {
+    color: black !important;
+}
+
 .layout-tab-bar .item--focus::before {
-    background-color: #deffe8 !important;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    background-color: #d4e7d8 !important;
+    /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08); */
 }
 
 .layout-tab-bar .item:hover {
@@ -69,6 +75,7 @@ ul.fn__flex.layout-tab-bar {
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
     display: inline;
+    opacity: 0.5;
 }
 
 .layout-tab-bar .item:not(:last-child) {

@@ -1,7 +1,6 @@
 /* 隐藏左上角设置按钮，鼠标悬浮时显示 */
 #toolbar .toolbar__item svg {
     opacity: 0;
-    /* background-color: red; */
 }
 
 #toolbar:hover svg {
@@ -12,55 +11,40 @@ div#toolbar .toolbar__item:not(.toolbar__item:last-child):hover {
     background-color: transparent;
 }
 
-/* 调整顶栏图标外边距 */
-#toolbar .toolbar__item {
-    margin: 0 4px;
-}
-
-/* 设置顶栏高度 */
-.toolbar {
-    height: 24px;
-    line-height: 24px;
-}
-
-/* 调整顶栏图标大小 */
-div#toolbar svg {
-    height: 12px;
-    width: 12px;
-}
 
 /* 给左侧dock栏设置右边框 */
 /* div#dockLeft {
-    border-right: 1px solid var(--b3-border-color);
+    border-right: 0.05em solid #80808080 !important;
 } */
 
 /* 给右侧dock栏设置左边框 */
 /* div#dockRight {
-    border-left: 1px solid var(--b3-border-color);
+    border-left: 0.05em solid #80808080 !important;
 } */
 
 /* 设置顶栏背景颜色 */
 div#toolbar {
-    background-color: #56bd90;
+    background-color: #387e55;
 }
 
 /* 设置顶栏中间文字的颜色 */
 .toolbar #drag {
-    color: white;
+    color: #ffffff80;
 }
 
 /* 设置顶栏图标的颜色 */
 .toolbar .fn__flex>div,
 div#toolbar>div {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffff80;
 }
 
-/* 设置侧边栏的颜色为渐变色 */
-div#dockLeft,
+/* 设置侧边栏的颜色 */
+div#dockLeft {
+    background-color: #bad1c0;
+}
+
 div#dockRight {
-    /* background: #252525; */
-    background-color: #20232d;
-    /* background: linear-gradient(135deg, rgba(131, 239, 182, .3) 0%, rgba(129, 238, 137, .3) 18%, rgba(184, 232, 117, .3) 36%, rgba(186, 230, 109, .3) 48%, rgba(191, 225, 86, .3) 53%, rgba(184, 228, 91, .3) 61%, rgba(172, 232, 100, .3) 68%, rgba(156, 238, 86, .3) 71%, rgba(141, 242, 87, .3) 91%, rgba(89, 254, 175, .3) 100%); */
+    background-color: #d4e7d8;
 }
 
 /* 修改最小化窗口鼠标悬浮时的颜色 */

@@ -1,14 +1,14 @@
 /* ————————————————————设置界面颜色———————————————————— */
 /* 设置界面侧栏 */
-.b3-dialog--open .b3-dialog__container ul.b3-tab-bar.b3-list.b3-list--background {
+/* .b3-dialog--open .b3-dialog__container ul.b3-tab-bar.b3-list.b3-list--background {
     background-color: #deffe8 !important;
     border-right: 1px solid var(--b3-border-color);
-}
+} */
 
 /* 设置界面右栏 */
-.b3-dialog--open .b3-dialog__container .b3-tab-container {
+/* .b3-dialog--open .b3-dialog__container .b3-tab-container {
     background-color: #f0fff5 !important;
-}
+} */
 
 /* 搜索界面标签页中文字居中 */
 .b3-dialog--open .b3-dialog__container span.item__text {
@@ -26,26 +26,26 @@
     border-radius: 0px;
 }
 
-.b3-dialog--open .b3-dialog__container .layout-tab-bar {
+/* .b3-dialog--open .b3-dialog__container .layout-tab-bar {
     background-color: #d7f7c4;
-}
+} */
 
 /* 设置界面左右按钮的边框 */
-.b3-dialog--open .b3-dialog__container .b3-switch:after {
+/* .b3-dialog--open .b3-dialog__container .b3-switch:after {
     border: 0.15em solid white;
-}
+} */
 
 /* 去掉设置界面某些选项框前面有滚动条的bug */
 /* .b3-dialog--open .b3-dialog__container .fn__flex-1 {
     overflow: hidden;
 } */
 
-.fn__flex-center.fn__flex-1.ft__on-surface {
+/* .fn__flex-center.fn__flex-1.ft__on-surface {
     overflow: hidden;
-}
+} */
 
 /* 为“打开主题文件夹”的按钮设置下划线 */
-a#appearanceOpenTheme,
+/* a#appearanceOpenTheme,
 a#appearanceOpenIcon {
     border-bottom: 2px solid #80808080;
 }
@@ -53,13 +53,13 @@ a#appearanceOpenIcon {
 a#appearanceOpenTheme:hover,
 a#appearanceOpenIcon:hover {
     text-decoration: none;
-}
+} */
 
 /* ————————————————————账号-续订价格那里的设置———————————————————— */
-.config-account__center--text .b3-button--outline:hover {
+/* .config-account__center--text .b3-button--outline:hover {
     color: inherit;
     background-color: inherit;
-}
+} */
 
 
 
@@ -83,5 +83,5 @@ a#appearanceOpenIcon:hover {
 
 
 .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--b3-theme-primary);
 }

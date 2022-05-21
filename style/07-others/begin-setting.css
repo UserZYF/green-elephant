@@ -42,3 +42,19 @@ textarea.b3-text-field.fn__flex-1 {
     color: #2bbe60;
     background-color: #ecf6f0;
 }
+
+/* 文档树滚动条，鼠标悬浮时才显示 */
+.fn__flex-1::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.fn__flex-1:hover::-webkit-scrollbar-thumb {
+    background-color: var(--b3-scroll-color);
+}
+
+
+/* 引用数字去掉背景颜色 */
+.counter, .protyle-attr--refcount {
+    background-color: transparent;
+}

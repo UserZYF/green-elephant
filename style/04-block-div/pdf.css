@@ -5,9 +5,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
     display: inline-block;
     color: #202124;
-    background-color: #e2fbd3;
-    padding: 8px;
-    padding-left: 20px;
+    /* background-color: rgba(215, 247, 196, 0.5); */
     margin: 0px;
     text-decoration: 0.1em solid var(--b3-theme-primary-light) underline;
 }

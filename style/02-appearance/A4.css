@@ -1,6 +1,6 @@
 /* 设置背景颜色 */
 .protyle-content {
-    background-color: #c8edcc;
+    background-color: var(--b3-theme-background);
 }
 
 /* 设置正文背景颜色/A4纸大小 */
